@@ -7,8 +7,6 @@ networks:
 
 services:
   cycle-apis:
-    build:
-      dockerfile: .devcontainer/Dockerfile
     container_name: cycle-apis
     environment:
       - NEO4J_DEV_URI=neo4j://localhost:7687
