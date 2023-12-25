@@ -16,7 +16,7 @@ services:
       - NEO4J_DEV_PASSWORD=neo4j
     ports:
       - "7108:7108"
-    networks:
-      - cyclenet
     volumes:
       - .:/workspace
+    networks:
+      - cyclenet
