@@ -19,3 +19,4 @@ services:
       - .:/workspace
     networks:
       - cyclenet
+    user: node
