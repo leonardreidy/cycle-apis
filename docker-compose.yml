@@ -9,6 +9,7 @@ services:
   cycle-apis:
     build:
       dockerfile: .devcontainer/Dockerfile
+    container_name: cycle-apis
     volumes:
       - .:/workspace
     environment:
