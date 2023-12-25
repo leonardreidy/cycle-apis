@@ -1,6 +1,7 @@
 {
   "name": "cycle-apis",
   "dockerComposeFile": "../docker-compose.yml",
+  "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
   "service": "cycle-apis",
   "features": {
@@ -13,7 +14,7 @@
     "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
   ],
 
-  //"postCreateCommand": "npm install -g npm@10.2.5 && npm install -g @devcontainers/cli",
+  "postCreateCommand": "npm install -g npm@10.2.5 && npm install -g @devcontainers/cli",
   "customizations": {
       "vscode": {
           "extensions": [
@@ -23,5 +24,6 @@
             "mads-hartmann.bash-ide-vscode"
           ]
       }
-  }
+  },
+  "remoteUser": "node"
 }
