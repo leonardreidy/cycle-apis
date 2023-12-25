@@ -1,9 +1,9 @@
 {
-  "name": "cycle-api",
+  "name": "cycle-apis",
   "dockerComposeFile": "../docker-compose.yml",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
-  "service": "cycle-api",
+  "service": "cycle-apis",
   "features": {
       "ghcr.io/devcontainers/features/node:1": {
         "version": "18.17.0",
