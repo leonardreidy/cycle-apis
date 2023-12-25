@@ -8,6 +8,7 @@ networks:
 services:
   cycle-apis:
     build:
+      context: .
       dockerfile: .devcontainer/Dockerfile
     container_name: cycle-apis
     # command: yarn start:dev
