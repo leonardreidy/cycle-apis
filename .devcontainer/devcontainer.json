@@ -1,5 +1,12 @@
 {
   "name": "cycle-apis",
+  "image": "ghcr.io/devcontainers/javascript-node",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18.17.0",
+      "nodeGypDependencies": true
+    }
+  },
   "workspaceFolder": "/workspace",
   "postCreateCommand": "npm install -g npm@10.2.5 && npm install -g @devcontainers/cli",
   "customizations": {
