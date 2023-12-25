@@ -10,7 +10,6 @@
       }
   },
   "mounts": [
-    "source=${localEnv:HOME}${localEnv:USERPROFILE},target=/host-home-folder,type=bind,consistency=cached",
     "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
   ],
 
