@@ -13,7 +13,7 @@ services:
     container_name: cycle-apis
     # command: yarn start:dev
     volumes:
-      - .:/workspace
+      - /:/workspace
     environment:
       - NEO4J_DEV_URI=neo4j://localhost:7687
       - NEO4J_DEV_USER=neo4j
