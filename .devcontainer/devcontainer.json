@@ -1,9 +1,6 @@
 {
   "name": "cycle-apis",
-  "dockerComposeFile": "../docker-compose.yml",
   "workspaceFolder": "/workspace",
-  "shutdownAction": "stopCompose",
-  "service": "cycle-apis",
   "postCreateCommand": "npm install -g npm@10.2.5 && npm install -g @devcontainers/cli",
   "customizations": {
     "vscode": {
@@ -15,5 +12,6 @@
         ]
     }
   },
+  "runArgs": ["--network=cyclenet"],
   "remoteUser": "node"
 }
