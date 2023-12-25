@@ -1,0 +1,24 @@
+{
+  "name": "cycle-api",
+  "dockerComposeFile": "../docker-compose.yml",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "service": "cycle-api",
+  "features": {
+      "ghcr.io/devcontainers/features/node:1": {
+        "version": "18.17.0",
+        "nodeGypDependencies": true
+      }
+  },
+  "postCreateCommand": "npm install -g npm@10.2.5 && npm install -g @devcontainers/cli",
+  "customizations": {
+      "vscode": {
+          "extensions": [
+            "dbaeumer.vscode-eslint",
+            "EditorConfig.EditorConfig",
+            "khan.two-monokai",
+            "mads-hartmann.bash-ide-vscode"
+          ]
+      }
+  }
+}

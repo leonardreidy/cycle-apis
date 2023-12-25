@@ -1,0 +1,20 @@
+version: '3.8'
+
+networks:
+  cyclenet:
+    driver: bridge
+
+services:
+  cycle-api:
+    build:
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - .:/workspace
+    environment:
+      - NEO4J_DEV_URI=neo4j://localhost:7687
+      - NEO4J_DEV_USER=neo4j
+      - NEO4J_DEV_PASSWORD=neo4j
+    networks:
+      - cyclenet
+    # ports:
+    #   - 2092:2092
