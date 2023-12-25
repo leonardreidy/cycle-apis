@@ -19,3 +19,5 @@ services:
       - "7108:7108"
     networks:
       - cyclenet
+    volumes:
+      - .:/workspace
