@@ -23,10 +23,12 @@
   "baseUrl": ".",
   "esModuleInterop": true,
 
-  "experimentalDecorators": true,
-
+  
   "forceConsistentCasingInFileNames": true, 
-
+  
   "resolveJsonModule": true,
+  
+  "experimentalDecorators": true,
+  "emitDecoratorMetadata": true
   }
 }
