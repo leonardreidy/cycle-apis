@@ -2,8 +2,8 @@ version: '3.8'
 
 networks:
   cyclenet:
-    external:
-      name: cycle-net
+    external: true
+    name: cyclenet
 
 services:
   cycle-apis:
