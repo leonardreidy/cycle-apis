@@ -1,8 +1,8 @@
 {
-  "name": "cycle-api",
+  "name": "cycle-apis",
   "version": "0.0.1",
   "main": "build/src/server.js",
-  "repository": "git@github.com:leonardreidy/cycle-api",
+  "repository": "git@github.com:leonardreidy/cycle-apis",
   "author": "Leonard M Reidy <leonard.reidy@gmail.com>",
   "license": "MIT",
   "dependencies": {
