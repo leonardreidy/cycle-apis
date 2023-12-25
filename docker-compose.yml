@@ -1,11 +1,7 @@
 version: '3.8'
 
-networks:
-  cyclenet:
-    driver: bridge
-
 services:
-  cycle-api:
+  cycle-apis:
     build:
       dockerfile: .devcontainer/Dockerfile
     volumes:
