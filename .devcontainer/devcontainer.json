@@ -1,6 +1,6 @@
 {
   "name": "cycle-apis",
-  "image": "ghcr.io/devcontainers/javascript-node",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "18.17.0",
