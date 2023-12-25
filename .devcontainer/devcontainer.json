@@ -16,14 +16,14 @@
 
   "postCreateCommand": "npm install -g npm@10.2.5 && npm install -g @devcontainers/cli",
   "customizations": {
-      "vscode": {
-          "extensions": [
-            "dbaeumer.vscode-eslint",
-            "EditorConfig.EditorConfig",
-            "khan.two-monokai",
-            "mads-hartmann.bash-ide-vscode"
-          ]
-      }
+    "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "EditorConfig.EditorConfig",
+          "khan.two-monokai",
+          "mads-hartmann.bash-ide-vscode"
+        ]
+    }
   },
   "remoteUser": "node"
 }
