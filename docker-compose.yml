@@ -16,6 +16,6 @@ services:
       - NEO4J_DEV_USER=neo4j
       - NEO4J_DEV_PASSWORD=neo4j
     ports:
-      - 2092:2092
+      - 2902:2902
     networks:
       - cyclenet
