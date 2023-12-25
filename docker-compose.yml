@@ -2,8 +2,7 @@ version: '3.8'
 
 networks:
   cyclenet:
-    external: true
-    name: cyclenet
+    driver: bridge
 
 services:
   cycle-apis:
