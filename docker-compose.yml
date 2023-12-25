@@ -8,6 +8,7 @@ networks:
 services:
   cycle-apis:
     container_name: cycle-apis
+    image: mcr.microsoft.com/devcontainers/javascript-node
     environment:
       - NEO4J_DEV_URI=neo4j://localhost:7687
       - NEO4J_DEV_USER=neo4j
