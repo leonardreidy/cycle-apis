@@ -4,6 +4,8 @@ import swaggerUi from "swagger-ui-express";
 import { RegisterRoutes } from "../build/routes"
 import { morganMiddleware } from "./middleware/morgan.middleware";
 import { logger } from "./logger/logger";
+//tsyringe/ioc
+import "reflect-metadata";  
 
 export const app = express();
 
