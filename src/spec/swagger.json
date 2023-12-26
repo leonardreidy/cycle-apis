@@ -145,7 +145,7 @@
 		"securitySchemes": {}
 	},
 	"info": {
-		"title": "cycle-api",
+		"title": "cycle-apis",
 		"version": "0.0.1",
 		"license": {
 			"name": "MIT"
