@@ -56,7 +56,7 @@ const cp = (src, dest, opts) => {
 
 program
   .name('cli')
-  .description('GP Contractor Service Core Development CLI')
+  .description('Cycle CLI')
   .version('0.0.1');
 
 program
