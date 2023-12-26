@@ -12,14 +12,20 @@ import {
 } from "tsoa";
 import { UserModel } from "../model/user.model";
 import { UserService, UserCreationParams } from "../service/user.service";
+import { injectable } from "tsyringe";
 
 export interface UserIDValidationError extends ValidateError {
   message: "Validation failed: User ID must be a number";
   details: { [key: string]: unknown }
 }
 
+@injectable()
 @Route("users")
 export class UserController extends Controller {
+
+  constructor(private userService: UserService) {
+    super();
+  }
 
   @Response<UserIDValidationError>(422, "Validation Failed") // Custom error response
   @Get("{userId}")
@@ -27,7 +33,7 @@ export class UserController extends Controller {
     @Path() userId: number,
     @Query() name?: string
   ): Promise<UserModel> {
-    return new UserService().get(userId, name);
+    return this.userService.getUserById(userId, name);
   }
 
   @SuccessResponse("201", "Created") // Custom success response
@@ -36,7 +42,7 @@ export class UserController extends Controller {
     @Body() requestBody: UserCreationParams
   ): Promise<void> {
     this.setStatus(201); // set return status 201
-    new UserService().create(requestBody);
+    await this.userService.createUser(requestBody);
     return;
   }
 }
