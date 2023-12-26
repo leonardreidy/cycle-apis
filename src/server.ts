@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 import { app } from "./app";
-import { logger } from "./logger/logger";
+import { logger } from "./common/logger/logger";
 import { ServerPresenter } from "./server/presenters/server.presenter";
 
 const server = app.listen(process.env.PORT ?? 7108, () => {

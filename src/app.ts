@@ -2,8 +2,8 @@ import express, { json, urlencoded, Response as ExResponse, Request as ExRequest
 import { ValidateError } from 'tsoa';
 import swaggerUi from "swagger-ui-express";
 import { RegisterRoutes } from "../build/routes"
-import { morganMiddleware } from "./middleware/morgan.middleware";
-import { logger } from "./logger/logger";
+import { morganMiddleware } from "./common/middleware/morgan.middleware";
+import { logger } from "./common/logger/logger";
 //tsyringe/ioc
 import "reflect-metadata";  
 
